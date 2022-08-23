@@ -8,6 +8,7 @@ score = 50;
 // let score = 50;
 
 console.log("Hasil variabel scroe " + score);
+// Menggabungkan string
 
 let playerName = "Budi";
 console.log("Hasil variabel playName " + playerName);
@@ -17,6 +18,9 @@ console.log("Hasil variabel playName " + playerName);
 playerName - "Irfan";
 console.log("Halo playerName " + playerName);
 // alert(playerName);
+
+const pi=3.14;
+pi=5.12; // error
 
 // bukan berupa boject atau array > tidak bisa diganti
 const angkaKeberuntungan = 10;

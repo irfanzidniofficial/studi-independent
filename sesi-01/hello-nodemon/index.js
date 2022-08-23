@@ -2,8 +2,6 @@
 
 // modeon > global
 
-
-
-let message = "She\'s a great person";
+let message = "She's a great personn";
 
 console.log(message);
