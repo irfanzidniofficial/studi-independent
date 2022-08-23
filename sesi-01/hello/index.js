@@ -38,3 +38,7 @@ const arrayNumber = [1, 2, 3, 4, 5];
 arrayNumber.push(6);
 
 console.log(arrayNumber);
+
+// nama variabel menggunakan camelCase
+
+var fullName = "Muhammad Irfan Zidni";
