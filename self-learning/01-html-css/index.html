@@ -9,52 +9,83 @@
     <title>HTML & CSS</title>
   </head>
   <body>
-    <h1>Blog Post</h1>
-    <h2>Post Pertama</h2>
-    <p>
-      Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit.
-      Ex reiciendis sunt tempora numquam repellat consequuntur tempore
-      repellendus, nisi id adipisci. Architecto voluptas velit nam. Excepturi
-      nulla cumque odit cum temporibus?
-      <u>Lorem ipsum dolor sit amet consectetur</u>
-      adipisicing elit. Aut, deserunt nemo. Placeat dolorum autem ratione!
-      Perspiciatis incidunt voluptate autem suscipit delectus, aut enim beatae
-      esse numquam porro praesentium quod laborum. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Praesentium nisi repellendus nesciunt nobis
-      distinctio magni obcaecati? Asperiores, accusantium magnam a numquam
-      labore molestiae, sunt recusandae unde assumenda, dicta tempora ipsa!
-    </p>
-    <img src="html-css.jpg" alt="html css" />
-    <p>Author: Muhammad Irfan Zidni</p>
-    <img src="author.jpg" alt="author" />
-    <br />
-    <a href="https://dinus.ac.id/">Contoh Link</a>
+    <div class="container">
+      <div class="blog-post">
+        <h1>Blog Post</h1>
+        <h2>Post Pertama</h2>
+        <p class="date">25 Agustus 2022</p>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing
+          elit. Ex reiciendis sunt tempora numquam repellat consequuntur tempore
+          repellendus, nisi id adipisci. Architecto voluptas velit nam.
+          Excepturi nulla cumque odit cum temporibus?
+          <u>Lorem ipsum dolor sit amet consectetur</u>
+          adipisicing elit. Aut, deserunt nemo. Placeat dolorum autem ratione!
+          Perspiciatis incidunt voluptate autem suscipit delectus, aut enim
+          beatae esse numquam porro praesentium quod laborum. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Praesentium nisi repellendus
+          nesciunt nobis distinctio magni obcaecati? Asperiores, accusantium
+          magnam a numquam labore molestiae, sunt recusandae unde assumenda,
+          dicta tempora ipsa!
+        </p>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing
+          elit. Ex reiciendis sunt tempora numquam repellat consequuntur tempore
+          repellendus, nisi id adipisci. Architecto voluptas velit nam.
+          Excepturi nulla cumque odit cum temporibus?
+          <u>Lorem ipsum dolor sit amet consectetur</u>
+          adipisicing elit. Aut, deserunt nemo. Placeat dolorum autem ratione!
+          Perspiciatis incidunt voluptate autem suscipit delectus, aut enim
+          beatae esse numquam porro praesentium quod laborum. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Praesentium nisi repellendus
+          nesciunt nobis distinctio magni obcaecati? Asperiores, accusantium
+          magnam a numquam labore molestiae, sunt recusandae unde assumenda,
+          dicta tempora ipsa!
+        </p>
 
-    <form action="">
-      <fieldset>
-        <label for="">Email :</label>
-        <input type="email" />
+        <img src="html-css.jpg" alt="html css" />
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="other-post">Dumyy</div>
+
+      <div class="author-box">
+        <img src="author.jpg" alt="author" />
         <br />
-        <label for="">Nama :</label>
-        <input type="text" placeholder="Masukan nama anda" />
+        <p id="author-text">Muhammad Irfan Zidni</p>
         <br />
-        <label for="">Jenis Kelamin:</label>
-        <input type="radio" name="jeniskelamin" /> Laki-laki
-        <input type="radio" name="jeniskelamin" /> Perempuan
-        <br />
-        <label for="">Materi</label>
-        <select name="" id="">
-          <option value="">HTML</option>
-          <option value="">CSS</option>
-        </select>
-        <br />
-        <label for="">Pesan</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br />
-        <input type="checkbox" /><label for="">Apakah mau berlangganan</label>
-        <br />
-        <input type="submit" value="Kirim" />
-      </fieldset>
-    </form>
+        <a href="https://dinus.ac.id/">Contoh Link</a>
+
+        <form action="">
+          <fieldset>
+            <label for="">Email :</label>
+            <input type="email" />
+            <br />
+            <label for="">Nama :</label>
+            <input type="text" placeholder="Masukan nama anda" />
+            <br />
+            <label for="">Jenis Kelamin:</label>
+            <input type="radio" name="jeniskelamin" /> Laki-laki
+            <input type="radio" name="jeniskelamin" /> Perempuan
+            <br />
+            <label for="">Materi</label>
+            <select name="" id="">
+              <option value="">HTML</option>
+              <option value="">CSS</option>
+            </select>
+            <br />
+            <label for="">Pesan</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br />
+            <input type="checkbox" /><label for=""
+              >Apakah mau berlangganan</label
+            >
+            <br />
+            <input type="submit" value="Kirim" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
