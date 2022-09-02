@@ -1,7 +1,7 @@
 const videoData = [
   {
     name: "Mis Scarlet",
-    prsent: true,
+    present: true,
     rooms: [
       { kitchen: false },
       { ballrom: false },
@@ -13,7 +13,7 @@ const videoData = [
   },
   {
     name: "Mis White",
-    prsent: false,
+    present: false,
     rooms: [
       { kitchen: false },
       { ballrom: false },
@@ -25,7 +25,7 @@ const videoData = [
   },
   {
     name: "Reverend Green",
-    prsent: true,
+    present: true,
     rooms: [
       { kitchen: false },
       { ballrom: false },
@@ -37,7 +37,7 @@ const videoData = [
   },
   {
     name: "Rusty",
-    prsent: false,
+    present: false,
     rooms: [
       { kitchen: false },
       { ballrom: false },
@@ -49,7 +49,7 @@ const videoData = [
   },
   {
     name: "Colonel Mustad",
-    prsent: true,
+    present: true,
     rooms: [
       { kitchen: false },
       { ballrom: false },
@@ -74,7 +74,24 @@ const videoData = [
 // console.log(present);
 // console.log(pres);
 
-const filteredData = videoData.filter((video) => videoData.present === true);
+const filteredData = videoData.filter((video) => {
+  return video.present;
+});
 
 console.log(filteredData);
-console.log(filteredData.length);
+// console.log(filteredData.length);
+
+const dataFilter = filteredData.map((data) => {
+  let name = data.name.toString();
+  let present = data.present.toString();
+  let rooms = data.rooms;
+
+  let roomsObject = {
+    nama: name,
+    present: present,
+    rooms: rooms,
+  };
+  console.log(roomsObject);
+});
+
+// console.log(dataFilter);
