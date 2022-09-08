@@ -1,0 +1,13 @@
+
+
+Step 1:
+jika kita belum install react> 
+> create-react-app hello-state
+
+
+Step 2:
+custom dulu aplikasi react bawaanay
+
+- definisikan data flow
+- component/
+    - User.js > default data (setstate/getstate)
