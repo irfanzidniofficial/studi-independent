@@ -36,3 +36,107 @@
     transform: rotate(360deg);
   }
 }
+
+footer {
+  width: 97%;
+  padding: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card {
+  padding: 10px;
+  background-color: rgb(211, 211, 211);
+  height: 250px;
+  width: 300px;
+}
+
+.sectionCard {
+  align-items: center;
+  column-count: 3;
+}
+
+.profileMeetup {
+  /* position: absolute; */
+  margin-top: 25px;
+  display: flex;
+  background-color: rgb(226, 226, 226);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 17px;
+}
+
+.profileMeetup .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  background-color: rgb(196, 196, 196);
+  width: 180px;
+  height: 180px;
+  margin: 15px 15px;
+}
+
+.about {
+  margin-left: 20px;
+}
+
+.location {
+  margin-left: 50px;
+}
+
+.members {
+  margin-left: 42px;
+}
+
+.organizers {
+  margin-left: 33px;
+}
+
+.nextMeetUp {
+  margin: 0 auto;
+  background-color: rgb(226, 226, 226);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.nextMeetUp .date {
+  opacity: 0.6;
+}
+
+.aboutMeetUp {
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.Members .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMember {
+  margin: 0 auto;
+}
+
+.profileMembers {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+}
+
+.image {
+  background-color: rgb(196, 196, 196);
+  width: 180px;
+  height: 180px;
+  margin: 15px 15px;
+}
+
+.profileMembers .nameProfile {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.profileMembers .nameProfile span {
+  margin-left: 20px;
+}

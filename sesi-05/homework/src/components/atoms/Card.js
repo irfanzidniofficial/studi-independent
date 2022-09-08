@@ -1,18 +1,20 @@
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import React, { Component } from "react";
 
-export default function Card() {
+export default function Card({ date }) {
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <>
+      <div className="card">
+        <p>{date}</p>
+        <hr />
+        <p>#39 JakartaJS April Meetup with kumparan</p>
+        <p>
+          139 <span>went</span>
+        </p>
+        <div className="view">
+          <Button variant="secondary">View</Button>
+        </div>
+      </div>
+    </>
   );
 }
