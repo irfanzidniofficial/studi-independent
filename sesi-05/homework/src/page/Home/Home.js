@@ -4,15 +4,16 @@ import HactivMeetUp from "../../components/molecules/HactivMeetUp";
 import Meetup from "../../components/molecules/Meetup";
 import Member from "../../components/molecules/Member";
 import NextMeetup from "../../components/molecules/NextMeetup";
+import PastMeetups from "../../components/molecules/PastMeetups";
 
 export default function Home() {
   return (
     <div>
-      <Meetup />
+      <HactivMeetUp />
       <NextMeetup />
       <AboutMeetup />
       <Member />
-      <HactivMeetUp />
+      <PastMeetups />
     </div>
   );
 }

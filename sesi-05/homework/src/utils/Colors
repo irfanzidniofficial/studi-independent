@@ -1,5 +1,0 @@
-export const mainColors = {
-  black: "#000000",
-  grey: "#999999",
-};
-

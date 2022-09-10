@@ -7,7 +7,7 @@ import Explore from "./components/molecules/Explore";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App container">
       <BrowserRouter>
         <Switch>
           <Route exact path="/">

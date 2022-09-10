@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class NextMeetup extends Component {
   render() {
     return (
-      <div>
-        <h3>Next Meetup</h3>
-        <article className="nextMeetUp">
+      <div container>
+        <h3 className="mt-3 mb-3">Next Meetup</h3>
+        <article className="nextMeetUp container rounded">
           <p>
             <b>Awesome Meetup and event</b>{" "}
           </p>

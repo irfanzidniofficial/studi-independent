@@ -1,6 +1,6 @@
-.App {
-  text-align: center;
-}
+/* .App {
+  text-align: ;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -111,11 +111,6 @@ footer {
   font-weight: 500;
 }
 
-.Members .header {
-  display: flex;
-  justify-content: space-between;
-}
-
 .mainMember {
   margin: 0 auto;
 }
@@ -127,9 +122,10 @@ footer {
 
 .image {
   background-color: rgb(196, 196, 196);
-  width: 180px;
-  height: 180px;
+  width: 90px;
+  height: 90px;
   margin: 15px 15px;
+  border-radius: 50%;
 }
 
 .profileMembers .nameProfile {

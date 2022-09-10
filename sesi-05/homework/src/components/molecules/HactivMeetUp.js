@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import "../../App.css";
+import { Gambar1 } from "../../assets";
+import Gambar2 from "../../assets/image.jpg";
 
 export default class HactivMeetUp extends Component {
   constructor(props) {
@@ -15,11 +17,11 @@ export default class HactivMeetUp extends Component {
   render() {
     return (
       <>
-        <section className="profileMeetup">
+        <section className="profileMeetup container rounded">
           <div className="image">
-            <img src="../../assets/image.jpg" alt="" />
+            <img src={Gambar2} alt="macbook" className="rounded" />
           </div>
-          <div className="about">
+          <div className="about mt-3">
             <h3>Hacktiv8 Meetup</h3>
             <p>
               Location <span className="location">{this.state.lokasi}</span>
@@ -31,7 +33,7 @@ export default class HactivMeetUp extends Component {
               Organizers{" "}
               <span className="organizers">{this.state.organizers}</span>
             </p>
-            <div className="view">
+            <div className="view mb-3">
               <Button variant="secondary">Join Us</Button>
             </div>
           </div>
