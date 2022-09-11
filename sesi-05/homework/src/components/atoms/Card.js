@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import React, { Component } from "react";
+import React from "react";
 
 export default function Card({ date }) {
   return (

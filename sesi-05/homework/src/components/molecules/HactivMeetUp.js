@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import "../../App.css";
-import { Gambar1 } from "../../assets";
 import Gambar2 from "../../assets/image.jpg";
+import PropTypes from "prop-types";
 
 export default class HactivMeetUp extends Component {
   constructor(props) {
@@ -42,3 +42,7 @@ export default class HactivMeetUp extends Component {
     );
   }
 }
+
+HactivMeetUp.propTypes = {
+  organizers: PropTypes.string,
+};
