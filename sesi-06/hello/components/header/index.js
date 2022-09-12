@@ -7,3 +7,10 @@ function Header() {
 }
 
 export default Header;
+function Header(){
+  return (
+    <header>
+      <h1>My first React App</h1>
+    </header>
+  )
+}
