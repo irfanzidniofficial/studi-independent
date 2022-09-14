@@ -1,0 +1,4 @@
+- Show currency with base 1 USD to CAD, IDR, JPY, CHF, EUR and GBP
+- Show exchange rate for each currencies
+- Show buy (5% more than the exchange rate)
+- Show sell (5% less than the exchange rate) This app uses API from Currency Freaks
