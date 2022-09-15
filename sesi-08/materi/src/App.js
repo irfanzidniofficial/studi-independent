@@ -12,7 +12,7 @@ import React from "react";
 //         fontfamily: "Arial",
 //       }}
 //     >
-//       <h1>Hello Word 2022</h1>
+//       <h1>Hello Inline CSS</h1>
 //     </div>
 //   );
 // }
@@ -35,7 +35,7 @@ import React from "react";
 //   );
 // }
 
-// => External CSS
+// => 3. External CSS
 
 // function App() {
 //   return (
@@ -71,30 +71,24 @@ import React from "react";
 
 // => 6. Styled Component
 // Install first => npm install --save styled-components
+import styled from "styled-components";
 
-// const Div=styled.div`
-//   background-Color: #faf1e6;
-//   padding: 30px; 
-//   font-family: "Arial";
+const Div = styled.div`
+  background-color: #faf1e6;
+  padding: 30px;
+  font-family: "Arial";
+`;
 
-//   ;
+function App() {
+  return (
+    <Div>
+      <h1>Hello Word 2022</h1>
+    </Div>
+  );
+}
 
-
-
-// export default function App(){
-//   return(
-//     <iv>
-//       <h1>Hello Word 2022</h1>
-//     </Div>
-//   )
-// }
-
-// }
-
+export default App;
 
 // => 7. CSS in JS Libraries
 
-
 // => 8. UI Framework
-
-
