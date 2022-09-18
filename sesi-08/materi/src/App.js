@@ -59,35 +59,36 @@ import React from "react";
 
 // => 5. External Object Variabel CSS
 
-// import divStyle from "./AppStyle";
-
-// function App() {
-//   return (
-//     <div style={divStyle}>
-//       <h1>Hello Word 2022</h1>
-//     </div>
-//   );
-// }
-
-// => 6. Styled Component
-// Install first => npm install --save styled-components
-import styled from "styled-components";
-
-const Div = styled.div`
-  background-color: #faf1e6;
-  padding: 30px;
-  font-family: "Arial";
-`;
+import divStyle from "./AppStyle";
 
 function App() {
   return (
-    <Div>
+    <div style={divStyle}>
       <h1>Hello Word 2022</h1>
-    </Div>
+    </div>
   );
 }
-
 export default App;
+
+// => 6. Styled Component
+// Install first => npm install --save styled-components
+// import styled from "styled-components";
+
+// const Div = styled.div`
+//   background-color: #faf1e6;
+//   padding: 30px;
+//   font-family: "Arial";
+// `;
+
+// function App() {
+//   return (
+//     <Div>
+//       <h1>Hello Word 2022</h1>
+//     </Div>
+//   );
+// }
+
+// export default App;
 
 // => 7. CSS in JS Libraries
 
