@@ -2,3 +2,30 @@
 
 
 // Inline CSS
+
+Kelebihan Inline Style
+
+- Masalah terkati global namespace
+- Keterganrungan dengan memanfaatkan import dan export di javascript
+-Dead code elimitation dapat lebih mudah dideteksi
+- Berbagi variable konstanta
+- Styling antar komponen
+
+
+Kekurangan
+- tidak dapat menggunakan media query
+- belum mendukung key frame animation
+
+// Radium Style
+
+inline style dengan fitur tambahan
+diciptakan oleh Formidable Labs
+Mendukuung media query
+
+
+
+// Style Component
+
+install => npm install styled-components -D
+
+2. npm install style-loader css-loader
