@@ -1,0 +1,47 @@
+Flux Architecture Flavors
+
+- Flux
+- Redux
+- Mobx
+- Unstated
+
+
+When Do i need Redux?
+
+- complex data flow
+- manya actions
+- same data used in multiple place
+
+Redux Principles
+- Single Source of Truth
+state global dari frontend di simpang di sebuah object dengan sebuah store (single store)
+
+- State is Ready Only
+satu satunya cara untuk merubah state adalah melalui action. Action adalah sebuah object yang menggambarkan apa yang haru terjadi
+
+- Changes are made with pure function
+untuk menjelaskan secara detail bagaimana sebuah state dapat di "ubah" oleh cation, kita harus menulis sebuah reducer
+
+Atau dengan kata lain:
+- One Immutable store
+store bersifat immutable, kita tidak bisa merubahnya secara langsung dari view, haru melalui actions
+
+- Actions Trigger Changes
+Action adalah plain JS object yang menjelaskan perubahan yang haru dilakukam. Contoh: increment, decrement, add todo, edit todo, delete todo
+
+
+- Reducer update the state
+Apa itu reducer? Reducer itu hanyalah fungsi javascript biasa yang harus kita buat. Praameter-nya ada 2: curren sstate dan action yang terjadi. Misalknya kita klik tanda tambah, artinya reducernya akan mengambil satate yang sekarang, misalnya 1, terus actionnya increment, jadi si Reducer akan mereturn state baru yang adalah 1+1=2
+
+Apa yang di butuhkan untuk bermain dengan Redux?
+
+- Redux itu sendiri. Reduc bisa di dapay melelui insalasi via npm
+- Initial State. Bisa dala bentuk tipe data apapun, tapi hampir dapat dipastikan secara practice akan digunakan sebuah object. Di dalana akan didaftarkan state apa saja yang kita butuhkan, beserta initial value nya
+- Reducer. Sebuah function dengan 2 parameter. state dan action. Initial state akan dimasukan ke dalam parameter sebagai defaul parameter dari state. Action adalah object dan yang akan sering kita gunakan adalah action tupe (untuk membaeritahu action yang akan dilakukan) dan action.payload (data yang di bawa dan diperlukan untuk melakukan berbagai proses yang hasilnya akan kita gunakan untuk update state)
+
+
+Apa yang dibutuhkan untuk bermain dengan Redux?
+
+- Function createStore dengan parameter sebuah reducer untuk menginisiasi store- Function subscribe (optional) untuk bisa mendaftarkan sebuah aksi yang akan di triger
+- Function subscribe (optional) untuk bisa mendaftarkan sebuah aksi yang akan di treigger secara otomatis ketika ada perubahan state
+- Function dispatch yang menerima parameter berupa object berisi type dan payload (optional) untuk diterusakn dan dikonsumi oleh reducer

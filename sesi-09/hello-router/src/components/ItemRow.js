@@ -1,17 +1,16 @@
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
-function ItemRow({ item }) {
+const ItemRow = ({ item }) => {
   const navigate = useNavigate();
+
   return (
-    <div>
-      <tr>
-        <td>{item.name}</td>
-        <td>
-          <button onClick={() => navigate(`${item.id}`)}>Show detail</button>
-        </td>
-      </tr>
-    </div>
+    <tr>
+      <td>{item.name}</td>
+      <td>
+        <button onClick={() => navigate(`${item.id}`)}>Show detail</button>
+      </td>
+    </tr>
   );
-}
+};
 
 export default ItemRow;
