@@ -1,14 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
-// import CounterClass from "./features/counter/CounterClassComponent";
-// import CounterFn from "./features/counter/CounterFnComponent";
+import CounterClass from "./features/counter/CounterClass";
+import CounterFn from "./features/counter/CounterFn";
 
 function App() {
   return (
-    <main className="App">
+    <div>
       <CounterFn />
       <CounterClass />
-    </main>
+    </div>
   );
 }
 
