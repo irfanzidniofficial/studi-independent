@@ -1,6 +1,6 @@
 import { Navigate, useLocation } from "react-router-dom";
 
-const ProtecpedRoute = ({ children }) => {
+const ProtectedRoute = ({ children }) => {
   let location = useLocation();
 
   if (!localStorage.getItem("token")) {
@@ -10,4 +10,4 @@ const ProtecpedRoute = ({ children }) => {
   return children;
 };
 
-export default ProtecpedRoute;
+export default ProtectedRoute;
