@@ -1,12 +1,4 @@
-import {
-  createSlice,
-  createAstncThunk,
-  configureStore,
-  getDefaultMiddleware,
-} from "@reduxjs/toolkit";
-import authReducer from "../auth/authSlice";
-import logger from "redux-logger";
-import { executeReducerBuilderCallback } from "@reduxjs/toolkit/dist/mapBuilders";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
   isLoginPending: false,
@@ -39,13 +31,6 @@ export const authLoginAPI = createAsyncThunk(
   }
 );
 
-export const store = configureStore({
-  reducer: {
-    auth: authReducer,
-  },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
-});
-
 const authSlice = createSlice({
   name: "auth",
   initialState,
@@ -54,16 +39,19 @@ const authSlice = createSlice({
     builder
       .addCase(authLoginAPI.pending, (state) => {
         state.isLoginPending = true;
+        state.isLoginSucces = false;
+        state.errorMessage = "";
       })
-      .addCase(authLoginAPI.fullfilled, (state, action) => {
-        console.log("fullfilled");
+      .addCase(authLoginAPI.fulfilled, (state, action) => {
+        console.log("fulfilled");
         console.log(action);
         const { email } = action.payload;
         state.isLoginPending = false;
         state.isLoginSucces = true;
         state.user = { email };
+        state.errorMessage = "";
       })
-      .addCase(authLogina.rejected, (state, action) => {
+      .addCase(authLoginAPI.rejected, (state, action) => {
         console.log(action, "rejected");
         state.isLoginPending = false;
         state.isLoginSucces = false;
@@ -71,3 +59,5 @@ const authSlice = createSlice({
       });
   },
 });
+
+export default authSlice.reducer;
