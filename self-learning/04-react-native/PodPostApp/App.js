@@ -2,6 +2,8 @@ import {FlatList, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 // import Layout from './src/components/Layout';
 // import Greeting from './src/components/Greeting';
+// import {NavigationContainer} from '@react-navigation/native';
+// import {createStackNavigator} from '@react-navigation/stack';
 
 const App = () => {
   // const state = {
@@ -29,6 +31,22 @@ const App = () => {
     },
   ];
   // renderItem=podcast=> <Text key={podcast.id}>{podcast}</Text>
+
+  // const static navigationOption={
+  //   title:
+
+  // }
+
+  const renderItem = ({item}) => {
+    return (
+      <View style={styles.wrapper}>
+        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.url}>{item.url}</Text>
+        {/* <Text>{podcast.title}</Text> */}
+      </View>
+    );
+  };
+
   return (
     // <View style={styles.container}>
     //   <Greeting text={'Hai..'} />
@@ -48,7 +66,7 @@ const App = () => {
 
     <View style={styles.container}>
       <FlatList
-        keyExtractor={item => item.id}
+        keyExtractor={item => podcast}
         data={podcast}
         renderItem={renderItem}
       />
@@ -58,11 +76,23 @@ const App = () => {
 
 export default App;
 
+// const Nav = createStackNavigator({
+//   App: {screen: App},
+// });
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  wrapper: {
+    padding: 15,
+    borderBottomWidth: 1,
+    borderBottomColor: 'gray',
+  },
   title: {
+    fontSize: 20,
+  },
+  url: {
     fontSize: 16,
   },
 });
